@@ -1890,14 +1890,14 @@ void KMMessage::setMsgSizeServer(size_t size)
 
 //-----------------------------------------------------------------------------
 ulong KMMessage::UID() const {
-  return headerField( "X-UID", NoEncoding ).toULong();
+  return headerField( "X-UID" ).toULong();
 }
 
 
 //-----------------------------------------------------------------------------
 void KMMessage::setUID(ulong uid)
 {
-  setHeaderField( "X-UID", QByteArray::number((qlonglong)uid), Unstructured, false, NoEncoding );
+  setHeaderField( "X-UID", QByteArray::number((qlonglong)uid), Unstructured, false );
   mDirty = true;
 }
 
@@ -1944,7 +1944,7 @@ QList<QByteArray> KMMessage::rawHeaderFields( const QByteArray& field ) const
   return headerFields;
 }
 
-QString KMMessage::headerField( const QByteArray& aName, EncodingMode encodingMode ) const
+QString KMMessage::headerField( const QByteArray& aName ) const
 {
   if ( aName.isEmpty() ) {
     return QString();
@@ -1955,12 +1955,7 @@ QString KMMessage::headerField( const QByteArray& aName, EncodingMode encodingMo
   }
 
   const char *fieldValue = mMsg->Headers().FieldBody( aName.data() ).AsString().c_str();
-  if ( encodingMode == NoEncoding ) {
-    return QString( fieldValue );
-  }
-  else {
-    return decodeRFC2047String( fieldValue, charset() );
-  }
+  return decodeRFC2047String( fieldValue, charset() );
 }
 
 QStringList KMMessage::headerFields( const QByteArray& field ) const
