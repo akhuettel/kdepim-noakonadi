@@ -2677,10 +2677,8 @@ QString KMCommand::cleanFileName( const QString &name )
   fileName.replace( '/', '_' );
   fileName.replace( '\\', '_' );
 
-  // Avoid hidden files be replacing the first dot
-  if ( fileName.startsWith( "." ) ) {
-    fileName[0] = '_';
-  }
+  // replace all '.' with '_', not just at the start of the filename
+  fileName.replace( '.', '_' );
 
   return fileName;
 }
