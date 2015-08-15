@@ -210,13 +210,18 @@ void KMAcctImap::killAllJobs( bool disconnectSlave )
 void KMAcctImap::ignoreJobsForMessage( KMMessage* msg )
 {
   if (!msg) return;
-  QList<ImapJob*>::const_iterator it;
-  for ( it = mImapJobList.constBegin(); it != mImapJobList.constEnd() && (*it); ++it )
+  QList<ImapJob*>::iterator it;
+  for ( it = mImapJobList.begin(); it != mImapJobList.end() && (*it); )
   {
     ImapJob *job = (*it);
     if ( !job->msgList().isEmpty() && job->msgList().first() == msg )
     {
       job->kill();
+      it = mImapJobList.erase(it);
+    }
+    else
+    {
+      ++it;
     }
   }
 }
@@ -224,13 +229,18 @@ void KMAcctImap::ignoreJobsForMessage( KMMessage* msg )
 //-----------------------------------------------------------------------------
 void KMAcctImap::ignoreJobsForFolder( KMFolder* folder )
 {
-  QList<ImapJob*>::const_iterator it;
-  for ( it = mImapJobList.constBegin(); (*it) && it != mImapJobList.constEnd(); ++it )
+  QList<ImapJob*>::iterator it;
+  for ( it = mImapJobList.begin(); (*it) && it != mImapJobList.end(); )
   {
     ImapJob *job = (*it);
     if ( !job->msgList().isEmpty() && job->msgList().first()->parent() == folder )
     {
       job->kill();
+      it = mImapJobList.erase(it);
+    }
+    else
+    {
+      ++it;
     }
   }
 }
