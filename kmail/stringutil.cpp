@@ -1134,7 +1134,12 @@ QString formatString( const QString &wildString, const QString &fromAddr )
 QMap<QString, QString> parseMailtoUrl ( const KUrl& url )
 {
   kDebug() << url.pathOrUrl();
-  QMap<QString, QString> values = url.queryItems( KUrl::CaseInsensitiveKeys );
+  // NOTE: KUrl::queryItems() replace all chars '+' with ' ' (space)
+  // This code will encode all plus chars into percent encoding to fix this problem
+  QByteArray encodedUrl = url.toEncoded();
+  encodedUrl.replace('+', "%2B");
+  KUrl urlForQuery(encodedUrl);
+  QMap<QString, QString> values = urlForQuery.queryItems( KUrl::CaseInsensitiveKeys );
   QString to = decodeMailtoUrl( url.path() );
   to = to.isEmpty() ?  values.value( "to" ) : to + QString( ", " ) + values.value( "to" );
   values.insert( "to", to );
