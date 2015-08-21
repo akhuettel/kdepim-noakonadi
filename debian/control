@@ -50,7 +50,7 @@ Depends: ${misc:Depends}, kdepimlibs-dbg,
  kdepim-strigi-plugins (= ${binary:Version}) |
  kdepim-wizards (= ${binary:Version}) |
  kjots (= ${binary:Version}) |
-# kleopatra (= ${binary:Version}) |
+ kleopatra (= ${binary:Version}) |
  kmail (= ${binary:Version}) |
  knode (= ${binary:Version}) |
  knotes (= ${binary:Version}) |
@@ -219,15 +219,15 @@ Description: KDE server configuration wizards
 # .
 # This package is part of KDE, and a component of the KDE PIM module.
 
-#Package: kleopatra
-#Section: net
-#Architecture: any
-#Depends: ${shlibs:Depends}, ${misc:Depends},
-# gnupg-agent, gnupg2, gpgsm, dirmngr, pinentry-qt4
-#Description: certificate Manager
-# Kleopatra is a tool for managing X.509 certificates and pgp keys.
-# .
-# This package is part of the KDE PIM module.
+Package: kleopatra
+Section: net
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ gnupg-agent, gnupg2, gpgsm, dirmngr, pinentry-qt4
+Description: certificate Manager
+ Kleopatra is a tool for managing X.509 certificates and pgp keys.
+ .
+ This package is part of the KDE PIM module.
 
 Package: kmail
 Section: mail
