@@ -34,6 +34,7 @@
 ./usr/lib/libmessagelist.so
 ./usr/lib/libmessageviewer.so
 ./usr/lib/libmimelib.so
+./usr/share/dbus-1/interfaces/org.kde.KAddressbook.Core.xml
 ./usr/share/dbus-1/interfaces/org.kde.KNotes.xml
 ./usr/share/dbus-1/interfaces/org.kde.Korganizer.Calendar.xml
 ./usr/share/dbus-1/interfaces/org.kde.addressbook.service.xml
@@ -48,3 +49,5 @@
 ./usr/share/dbus-1/interfaces/org.kde.korganizer.Korganizer.xml
 ./usr/share/dbus-1/interfaces/org.kde.ktimetracker.ktimetracker.xml
 ./usr/share/dbus-1/interfaces/org.kde.mailtransport.service.xml
+./usr/share/kde4/servicetypes/kaddressbookimprotocol.desktop
+./usr/share/man/man1/kabcclient.1

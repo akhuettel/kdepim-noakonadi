@@ -22,13 +22,13 @@ Vcs-Git: git://git.debian.org/pkg-kde/kde-sc/kdepim.git
 
 Package: kdepim
 Architecture: all
-Depends: ${misc:Depends}, akregator, kaddressbook (>= ${source:Version}),
+Depends: ${misc:Depends}, akregator (>= ${source:Version}), kaddressbook (>= ${source:Version}),
  kalarm (>= ${source:Version}), kdepim-kresources (>= ${source:Version}), kdepim-wizards (>= ${source:Version}),
  kmail (>= ${source:Version}), knode (>= ${source:Version}), knotes (>= ${source:Version}),
  konsolekalendar (>= ${source:Version}), kontact (>= ${source:Version}), korganizer (>= ${source:Version}),
  ktimetracker (>= ${source:Version}), kdepim-strigi-plugins (>= ${source:Version}), kjots (>= ${source:Version}),
- blogilo (>= ${source:Version}), kdepim-runtime
-Recommends: kleopatra
+ blogilo (>= ${source:Version}), kleopatra (>= ${source:Version}), kdepim-runtime
+Suggests: kdepim-doc
 Description: Personal Information Management apps from the official KDE release
  KDE (the K Desktop Environment) is a powerful Open Source graphical
  desktop environment for Unix workstations. It combines ease of use,
@@ -99,6 +99,19 @@ Replaces: kmail (<= 4:4.2.1)
 Description: Contains development files needed to compile kdepim applications.
  This package is part of KDE, and a component of the KDE PIM module.
  See the 'kde' and 'kdepim' packages for more information
+
+Package: kdepim-doc
+Section: doc
+Architecture: all
+Conflicts: akregator (<< 4:4.2.85-0ubuntu4)
+Replaces: kjots (<< 4:4.3.3), knotes (<< 4:4.3.3)
+Suggests: konqueror | www-browser, doc-base
+Description: KDE Personal Information Management library documentation
+ KDE core library documentation. You need this documentation to develop KDE PIM
+ applications.
+ .
+ This package is part of KDE, and a component of the KDE PIM module.
+ See the 'kde' and 'kdepim' packages for more information.
 
 Package: akregator
 Section: web
