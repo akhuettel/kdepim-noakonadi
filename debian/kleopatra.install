@@ -3,9 +3,9 @@ usr/bin/kleopatra
 usr/bin/kwatchgnupg
 usr/lib/kde4/kcm_kleopatra.so
 usr/lib/libkleopatraclientcore.so.0
-usr/lib/libkleopatraclientcore.so.0.2.1
+usr/lib/libkleopatraclientcore.so.0.*
 usr/lib/libkleopatraclientgui.so.0
-usr/lib/libkleopatraclientgui.so.0.2.1
+usr/lib/libkleopatraclientgui.so.0.*
 usr/share/applications/kde4/kleopatra.desktop
 usr/share/applications/kde4/kleopatra_import.desktop
 usr/share/doc/kde/HTML/en/kleopatra/common
