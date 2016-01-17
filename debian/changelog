@@ -1,3 +1,32 @@
+kdepim (5:4.4.11.8-0ubuntu1) precise; urgency=low
+
+  * Fix parsing mailto: URIs with char '+'
+  * Fix underlinking (Gentoo bugs 369307 and 497788)
+  * Port kleopatra-4.4 to libassuan2
+  * Enable kleopatra package again
+  * Bugfix: KMail: KMAcctImap::ignoreJobsFor*: Remove jobs from job list after we kill them
+  * Install missing files and revert back kleopatra and kdepim-doc packages
+  * Parse References header from mailto: URI
+  * Backport patches:
+    * Add support for attachment=foo in mailto URLs
+    * Fix Bug 306700 - Command line option --msg does not work
+    * When the attachment has no name, name it "Attachment %1", so that it does not appear empty in the composer.
+    * When the subject starts with a dot, change it to an underscore, to avoid hidden files.
+    * for the saveAs dialog prompt, use "*" instead of "*.*" for the all file filter. also use pretty names.
+    * Fixes a crash when encountring a TNef attachment with an unknown mimetype (and displays the correct icon now, even)
+    * Don't specifiy a width and height, that seems to be unnecessary. Now the text and links under the attachment injection div should be clickable again.
+    * Make sure to update the reader window when deleting a attachment, that was not done when using a seperate reader window.
+    * Don't try to be smart and read the header field in the encoding of the message body. This was a workaround for clients not RFC2047-encoding the subject.
+    * Change the dot to a _ everywhere, not just at the start, otherwise it is inconsistent.
+    * Make .tar.bz2 the default.
+    * It is apparently the expected behaviour of KShell::tildeExpand() to expand "~test" to the home dir, so work around that.
+    * use splitEmailAddrList() to parse the the user entered Ids.
+    * work-around broken handling of empty divs (<div />) in webkit by explicitly closing them (<div></div>). fixes about kmail page
+    * Ensure that the cleanFileName method also leaves the last '.' intact for file extenstions.
+    * Enable the 'replace dot by underscore in filenames' feature only in enterprise build.
+
+ -- Pali Rohár <pali.rohar@gmail.com>  Sun, 17 Jan 2016 14:43:56 +0100
+
 kdepim (5:4.4.11.7-0ubuntu1) unstable; urgency=low
 
   * Fix crashing when storageModel is NULL
