@@ -344,6 +344,8 @@ bool KMKernel::handleCommandLine( bool noArgsOpensReader )
           body = values.value( "body" );
         if ( !values.value( "in-reply-to" ).isEmpty() )
           customHeaders << "In-Reply-To:" + values.value( "in-reply-to" );
+        if ( !values.value( "references" ).isEmpty() )
+          customHeaders << "References:" + values.value( "references" );
         const QString attach = values.value( "attachment" );
         if ( !attach.isEmpty() ) {
             attachURLs << makeAbsoluteUrl( attach );
