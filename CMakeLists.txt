@@ -7,25 +7,13 @@ set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/modules")
 ############### Build Options ###############
 
 option(KDEPIM_BUILD_EXAMPLES "Build the kdepim example applications." FALSE)
-option(KDEPIM_ENTERPRISE_BUILD "Enable features specific to the enterprise branch, which are normally disabled. Also, it disables many components not needed for Kontact such as the Kolab client." FALSE)
-option(KDEPIM_ONLY_KLEO "Only build Kleopatra. This option will disable KDEPIM_BUILD_EVERYTHING and KDEPIM_ENTERPRISE_BUILD." FALSE)
 
-# if KDEPIM_ENTERPRISE_BUILD is defined, KDEPIM_ONLY_KLEO is disabled
-if(KDEPIM_ENTERPRISE_BUILD)
-  set(KDEPIM_ONLY_KLEO FALSE)
-  set(KDEPIM_BUILD_EVERYTHING FALSE)
-  message(STATUS "Enterprise build is enabled.")
-else(KDEPIM_ENTERPRISE_BUILD)
-  # if KDEPIM_ONLY_KLEO is defined, KDEPIM_BUILD_EVERYTHING is disabled.
-  if(KDEPIM_ONLY_KLEO)
-    set(KDEPIM_BUILD_EVERYTHING FALSE)
-    set(KDEPIM_DEFINITIONS "-DHAVE_CONFIG_H=1")
-    message(STATUS "Only libkleo and Kleopatra will be built.")
-  endif(KDEPIM_ONLY_KLEO)
-  # Default
-    set(KDEPIM_BUILD_EVERYTHING TRUE)
-    message(STATUS "Enterprise build is disabled.")
-endif(KDEPIM_ENTERPRISE_BUILD)
+set(KDEPIM_ENTERPRISE_BUILD FALSE)
+set(KDEPIM_ONLY_KLEO FALSE)
+
+# Default
+set(KDEPIM_BUILD_EVERYTHING TRUE)
+message(STATUS "Enterprise build is disabled.")
 
 # config-enterprise.h is needed for both ENTERPRISE_BUILD and BUILD_EVERYTHING
 configure_file(config-enterprise.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-enterprise.h )
@@ -66,25 +54,6 @@ else(WIN32)
 endif(WIN32)
 
 
-############### ONLY_KLEO ###############
-
-# The KDEPIM_ONLY_KLEO option is true
-if(KDEPIM_ONLY_KLEO)
-  find_package(QGpgme)
-  macro_log_feature(QGPGME_FOUND "QGpgME" "The QGpgME library" "http://www.kde.org" TRUE "" "QGpgME is required to build Kleopatra.")
-
-  add_definitions(${QT_DEFINITIONS} ${KDE4_DEFINITIONS} ${KDEPIM_DEFINITIONS})
-  include_directories (${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} ${KDE4_INCLUDES} ${KDEPIMLIBS_INCLUDE_DIRS} ${QT_QTDBUS_INCLUDE_DIR})
-  include(kleopatra/ConfigureChecks.cmake)
-
-  add_subdirectory(libkleo)
-  if (Boost_TOPOLOGICAL_SORT_DIR)
-    macro_optional_add_subdirectory(kleopatra)
-  endif (Boost_TOPOLOGICAL_SORT_DIR)
-
-else(KDEPIM_ONLY_KLEO)
-
-# Otherwise...
 ############### Find the stuff we need ###############
 
 #  find_package(Akonadi QUIET NO_MODULE)
@@ -216,16 +185,9 @@ set(libkdgantt1_SRCS
 #    add_subdirectory( nepomuk_email_feeder )
   endif(QGPGME_FOUND)
 
-  if(KDEPIM_BUILD_EVERYTHING)
-    macro_optional_add_subdirectory(knode)
-  endif(KDEPIM_BUILD_EVERYTHING)
-
-  macro_optional_add_subdirectory(akregator)
 #  macro_optional_add_subdirectory(akonadiconsole)
-  macro_optional_add_subdirectory(blogilo)
   macro_optional_add_subdirectory(console)
   macro_optional_add_subdirectory(kalarm)
-  macro_optional_add_subdirectory(kjots)
   macro_optional_add_subdirectory(knotes)
   macro_optional_add_subdirectory(strigi-analyzer)
     
@@ -248,7 +210,6 @@ set(libkdgantt1_SRCS
   add_subdirectory(kresources) # Must be after KAddressbook
   add_subdirectory(plugins) # Must be after KMail
 
-endif (KDEPIM_ONLY_KLEO)
 
 # doc must be a subdir of kdepim or packagers will kill us
 macro_optional_add_subdirectory(doc)
