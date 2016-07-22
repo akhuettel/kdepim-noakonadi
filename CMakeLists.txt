@@ -167,7 +167,6 @@ set(libkdgantt1_SRCS
   endif(QGPGME_FOUND)
 
   macro_optional_add_subdirectory(console)
-  macro_optional_add_subdirectory(kalarm)
   macro_optional_add_subdirectory(knotes)
     
   if(EXISTS ${CMAKE_SOURCE_DIR}/runtime)
