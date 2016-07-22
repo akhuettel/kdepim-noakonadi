@@ -55,9 +55,6 @@ endif(WIN32)
 
 ############### Find the stuff we need ###############
 
-#  find_package(Akonadi QUIET NO_MODULE)
-#  macro_log_feature(Akonadi_FOUND "Akonadi" "Akonadi server libraries" "http://pim.kde.org/akonadi" TRUE "" "Akonadi is required to build KDEPIM")
-
   find_package(ZLIB)
   macro_log_feature(ZLIB_FOUND "ZLib" "The Zlib compression library" "http://www.zlib.net" TRUE "" "")
 
@@ -135,7 +132,6 @@ set(libkdgantt1_SRCS
   include (kleopatra/ConfigureChecks.cmake)
 
   # These targets will always be built before anything else.
-#  add_subdirectory(akonadi)
   add_subdirectory(libkdepim)
   add_subdirectory(libkleo)
   add_subdirectory(libkpgp)
@@ -170,7 +166,6 @@ set(libkdgantt1_SRCS
 #    add_subdirectory( nepomuk_email_feeder )
   endif(QGPGME_FOUND)
 
-#  macro_optional_add_subdirectory(akonadiconsole)
   macro_optional_add_subdirectory(console)
   macro_optional_add_subdirectory(kalarm)
   macro_optional_add_subdirectory(knotes)
