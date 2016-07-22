@@ -59,7 +59,7 @@ endif(WIN32)
   macro_log_feature(ZLIB_FOUND "ZLib" "The Zlib compression library" "http://www.zlib.net" TRUE "" "")
 
   find_package(QGpgme)
-  macro_log_feature(QGPGME_FOUND "QGpgME" "The QGpgME library" "http://www.kde.org" FALSE "" "QGpgME is required to build KMail, KOrganizer and Kleopatra")
+  macro_log_feature(QGPGME_FOUND "QGpgME" "The QGpgME library" "http://www.kde.org" FALSE "" "QGpgME is required to build KMail and Kleopatra")
 
   set(SDO_MIN_VERSION 0.2)
   set(SOPRANO_MIN_VERSION 2.3.70)
@@ -109,7 +109,7 @@ set(libknoteseditor_SRCS
   ${CMAKE_SOURCE_DIR}/knotes/knoteedit.cpp
 )
 
-# used in kdgantt1, korganizer
+# used in kdgantt1
 set(libkdgantt1_SRCS
   ${CMAKE_SOURCE_DIR}/kdgantt1/KDGanttView.cpp
   ${CMAKE_SOURCE_DIR}/kdgantt1/KDGanttViewEventItem.cpp
@@ -159,11 +159,7 @@ set(libkdgantt1_SRCS
 
     macro_optional_add_subdirectory(kmailcvt)
     macro_optional_add_subdirectory(ksendemail)
-    macro_optional_add_subdirectory(korganizer)
 
-#    include( SopranoAddOntology )
-#    add_subdirectory( ontologies )
-#    add_subdirectory( nepomuk_email_feeder )
   endif(QGPGME_FOUND)
 
   macro_optional_add_subdirectory(console)
@@ -194,7 +190,7 @@ macro_optional_add_subdirectory(doc)
 if(NOT QGPGME_FOUND)
   # Users must be aware that QGpgMe is really needed
   message(STATUS "*** WARNING: QGpgME is not installed on your system ***")
-  message(STATUS "*** It is required if you want to use KMail, KOrganizer or Kleopatra ***")
+  message(STATUS "*** It is required if you want to use KMail or Kleopatra ***")
   message(STATUS "*** You are really encouraged to install it ***")
 endif(NOT QGPGME_FOUND)
 # All done, let's display what we found...
