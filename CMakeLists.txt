@@ -6,8 +6,7 @@ set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/modules")
 
 ############### Build Options ###############
 
-option(KDEPIM_BUILD_EXAMPLES "Build the kdepim example applications." FALSE)
-
+set(KDEPIM_BUILD_EXAMPLES FALSE)
 set(KDEPIM_ENTERPRISE_BUILD FALSE)
 set(KDEPIM_ONLY_KLEO FALSE)
 
@@ -155,10 +154,6 @@ set(libkdgantt1_SRCS
     # The following components depend on QGpgME.
     add_subdirectory(messageviewer)
     macro_optional_add_subdirectory(kmail)
-
-    if(KDEPIM_BUILD_EXAMPLES)
-      add_subdirectory(examples)
-    endif(KDEPIM_BUILD_EXAMPLES)
 
     # If kmail is compiled, KMAIL_SUPPORTED is true (used in several places)
     if(BUILD_kmail)
