@@ -62,25 +62,15 @@ endif(WIN32)
   find_package(ZLIB)
   macro_log_feature(ZLIB_FOUND "ZLib" "The Zlib compression library" "http://www.zlib.net" TRUE "" "")
 
-  find_package(Strigi)
-  macro_log_feature(STRIGI_FOUND "Strigi" "Index metadata of files" "http://strigi.sourceforge.net" TRUE "" "")
-
   find_package(QGpgme)
   macro_log_feature(QGPGME_FOUND "QGpgME" "The QGpgME library" "http://www.kde.org" FALSE "" "QGpgME is required to build KMail, KOrganizer and Kleopatra")
 
   set(SDO_MIN_VERSION 0.2)
   set(SOPRANO_MIN_VERSION 2.3.70)
 
-#  find_package(SharedDesktopOntologies ${SDO_MIN_VERSION})
-#  macro_log_feature(SHAREDDESKTOPONTOLOGIES_FOUND "Shared desktop ontologies" "Desktop ontologies" "http://oscaf.sourceforge.net" TRUE "${SDO_MIN_VERSION}" "Ontologies necessary for the Nepomuk semantic desktop.")
+  set(Strigi_FOUND 0)
   set(SHAREDDESKTOPONTOLOGIES_FOUND 0)
-
-#  find_package(Soprano)
-#  macro_log_feature(Soprano_FOUND "Soprano" "Semantic Desktop Storing" "http://soprano.sourceforge.net" TRUE "${SOPRANO_MIN_VERSION}" "Soprano is needed for Nepomuk")
   set(Soprano_FOUND 0)
-
-#  find_package(Nepomuk)
-#  macro_log_feature(Nepomuk_FOUND "Nepomuk" "The Nepomuk libraries" "http://www.kde.org" TRUE "" "Nepomuk extends the search and tagging functionalities in KMail and Akonadi")
   set(Nepomuk_FOUND 0)
 
 
@@ -189,7 +179,6 @@ set(libkdgantt1_SRCS
   macro_optional_add_subdirectory(console)
   macro_optional_add_subdirectory(kalarm)
   macro_optional_add_subdirectory(knotes)
-  macro_optional_add_subdirectory(strigi-analyzer)
     
   if(EXISTS ${CMAKE_SOURCE_DIR}/runtime)
     macro_optional_add_subdirectory(runtime)
