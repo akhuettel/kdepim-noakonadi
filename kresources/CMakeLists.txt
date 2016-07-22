@@ -21,13 +21,9 @@ ENDMACRO(QT4_ADD_DBUS_INTERFACE2)
 include_directories( ${CMAKE_CURRENT_SOURCE_DIR} )
 
 add_subdirectory( lib )
-add_subdirectory( birthdays )
-add_subdirectory( blog )
 add_subdirectory( remote )
 add_subdirectory( kolab )
 
 if(KDEPIM_BUILD_EVERYTHING)
   add_subdirectory( slox )
-  add_subdirectory( groupdav )
-  add_subdirectory( groupwise )
 endif(KDEPIM_BUILD_EVERYTHING)
