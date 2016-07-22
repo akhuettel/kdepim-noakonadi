@@ -178,9 +178,6 @@ set(libkdgantt1_SRCS
   endif (BUILD_runtime)
 
   macro_optional_add_subdirectory(kaddressbook)
-  if(Q_WS_X11)
-    macro_optional_add_subdirectory(ktimetracker)
-  endif(Q_WS_X11)
 
   macro_optional_add_subdirectory(kontact) # must be the last one.
 
