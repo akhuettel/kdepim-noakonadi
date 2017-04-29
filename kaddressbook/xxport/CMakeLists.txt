@@ -22,7 +22,7 @@ install(TARGETS kaddrbk_csv_xxport  DESTINATION ${PLUGIN_INSTALL_DIR})
 
 
 ########### next target ###############
-if(QGPGME_FOUND)
+if(KDE4_QGPGME_FOUND)
 set(kaddrbk_vcard_xxport_PART_SRCS vcard_xxport.cpp )
 
 
@@ -30,10 +30,10 @@ kde4_add_plugin(kaddrbk_vcard_xxport ${kaddrbk_vcard_xxport_PART_SRCS})
 
 
 
-target_link_libraries(kaddrbk_vcard_xxport kaddressbookprivate kabinterfaces kabcommon kdepim ${KDEPIMLIBS_KABC_LIBS} ${KDE4_KDEUI_LIBS} ${QGPGME_LIBRARIES} )
+target_link_libraries(kaddrbk_vcard_xxport kaddressbookprivate kabinterfaces kabcommon kdepim ${KDEPIMLIBS_KABC_LIBS} ${KDE4_KDEUI_LIBS} ${KDE4_QGPGME_LIBRARIES} )
 
 install(TARGETS kaddrbk_vcard_xxport  DESTINATION ${PLUGIN_INSTALL_DIR})
-endif(QGPGME_FOUND)
+endif(KDE4_QGPGME_FOUND)
 
 ########### next target ###############
 

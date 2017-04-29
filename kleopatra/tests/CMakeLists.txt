@@ -40,7 +40,7 @@ set(test_verify_SRCS test_verify.cpp)
 add_definitions( -DKLEO_TEST_GNUPGHOME=\\"${CMAKE_CURRENT_SOURCE_DIR}/gnupg_home\\" )
 add_definitions( -DKLEO_TEST_DATADIR=\\"${CMAKE_CURRENT_SOURCE_DIR}\\" )
 kde4_add_unit_test(test_verify TESTNAME kleo-verifytest ${test_verify_SRCS})
-target_link_libraries(test_verify kleo ${QT_QTTEST_LIBRARY} ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${KDE4_KDECORE_LIBS} ${QGPGME_LIBRARIES})
+target_link_libraries(test_verify kleo ${QT_QTTEST_LIBRARY} ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${KDE4_KDECORE_LIBS} ${KDE4_QGPGME_LIBRARIES})
 
 ########### next target ###############
 
@@ -67,9 +67,9 @@ if ( USABLE_ASSUAN_FOUND  )
   endif ( ASSUAN2_FOUND )
 
   if(WIN32)
-	 target_link_libraries(test_uiserver ${ASSUAN_VANILLA_LIBRARIES} ${QGPGME_LIBRARIES} ws2_32)
+    target_link_libraries(test_uiserver ${ASSUAN_VANILLA_LIBRARIES} ${KDE4_QGPGME_LIBRARIES} ws2_32)
   else(WIN32)
-	 target_link_libraries(test_uiserver ${ASSUAN_PTHREAD_LIBRARIES} ${QGPGME_LIBRARIES} )
+    target_link_libraries(test_uiserver ${ASSUAN_PTHREAD_LIBRARIES} ${KDE4_QGPGME_LIBRARIES} )
   endif(WIN32)
   if (KDEPIM_ONLY_KLEO)
      install( TARGETS test_uiserver ${INSTALL_TARGETS_DEFAULT_ARGS})

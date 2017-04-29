@@ -25,7 +25,7 @@ include_directories(
   ${CMAKE_SOURCE_DIR}/libkleo
   ${CMAKE_SOURCE_DIR}/libkdepim
   ${Boost_INCLUDE_DIR}
-  ${QGPGME_INCLUDES}
+  ${KDE4_QGPGME_INCLUDE_DIR}
   ${GPGME_INCLUDES} )
 if (USABLE_ASSUAN_FOUND)
   if (ASSUAN2_FOUND)
@@ -321,7 +321,7 @@ if ( NOT KDE4_KCMUTILS_LIBS )
   set( KDE4_KCMUTILS_LIBS ${KDE4_KUTILS_LIBS} )
 endif ( NOT KDE4_KCMUTILS_LIBS )
 
-target_link_libraries(kleopatra_bin ${_kleopatra_extra_libs} kleo ${QGPGME_LIBRARIES} ${KDE4_KDEUI_LIBS} ${KDE4_KMIME_LIBRARY} ${KDE4_KCMUTILS_LIBS} ${_kleopatra_uiserver_extra_libs} ${_kleopatra_libkdepim_LIBS})
+target_link_libraries(kleopatra_bin ${_kleopatra_extra_libs} kleo ${KDE4_QGPGME_LIBRARIES} ${KDE4_KDEUI_LIBS} ${KDE4_KMIME_LIBRARY} ${KDE4_KCMUTILS_LIBS} ${_kleopatra_uiserver_extra_libs} ${_kleopatra_libkdepim_LIBS})
 if ( USABLE_ASSUAN_FOUND )
   target_link_libraries(kleopatra_bin ${QT_QTNETWORK_LIBRARY}) 
 ENDIF ( USABLE_ASSUAN_FOUND )

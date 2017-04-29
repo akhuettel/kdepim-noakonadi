@@ -18,7 +18,7 @@ set(test_keygen_SRCS test_keygen.cpp )
 
 kde4_add_executable(test_keygen TEST ${test_keygen_SRCS})
 
-target_link_libraries(test_keygen  kleo ${KDE4_KDECORE_LIBS} ${KDE4_KDEUI_LIBS} ${QGPGME_LIBRARIES})
+target_link_libraries(test_keygen  kleo ${KDE4_KDECORE_LIBS} ${KDE4_KDEUI_LIBS} ${KDE4_QGPGME_LIBRARIES})
 
 
 ########### next target ###############
@@ -54,7 +54,7 @@ set(test_jobs_SRCS test_jobs.cpp )
 
 kde4_add_executable(test_jobs TEST ${test_jobs_SRCS})
 
-target_link_libraries(test_jobs  kleo ${QT_QT3SUPPORT_LIBRARY} ${KDE4_KDECORE_LIBS} ${KDE4_KDEUI_LIBS} ${QGPGME_LIBRARIES})
+target_link_libraries(test_jobs  kleo ${QT_QT3SUPPORT_LIBRARY} ${KDE4_KDECORE_LIBS} ${KDE4_KDEUI_LIBS} ${KDE4_QGPGME_LIBRARIES})
 
 ########### next target ###############
 

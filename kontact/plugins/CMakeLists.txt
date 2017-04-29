@@ -3,7 +3,7 @@ option(KONTACT_ENABLE_MIXEDMODE_SUMMARY_PLUGINS "Build the Special Dates and Pla
 remove_definitions(-DKDE_DEFAULT_DEBUG_AREA=5600) #remove kontact debug area
 add_definitions(-DKDE_DEFAULT_DEBUG_AREA=5602)
 
-if(QGPGME_FOUND)
+if(KDE4_QGPGME_FOUND)
   if(BUILD_kmail)
     add_subdirectory( kmail )
   endif(BUILD_kmail)
@@ -15,7 +15,7 @@ if(QGPGME_FOUND)
     add_subdirectory( specialdates )
     add_subdirectory( planner )
   endif()
-endif(QGPGME_FOUND)
+endif(KDE4_QGPGME_FOUND)
 if (BUILD_knotes)
   add_subdirectory( knotes )
 endif (BUILD_knotes)

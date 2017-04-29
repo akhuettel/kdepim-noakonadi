@@ -70,8 +70,8 @@ endif(WIN32)
 
 # The KDEPIM_ONLY_KLEO option is true
 if(KDEPIM_ONLY_KLEO)
-  find_package(QGpgme)
-  macro_log_feature(QGPGME_FOUND "QGpgME" "The QGpgME library" "http://www.kde.org" TRUE "" "QGpgME is required to build Kleopatra.")
+  find_package(KDE4_QGpgme)
+  macro_log_feature(KDE4_QGPGME_FOUND "KDE4_QGpgME" "The KDE4_QGpgME library" "http://www.kde.org" TRUE "" "KDE4_QGpgME is required to build Kleopatra.")
 
   add_definitions(${QT_DEFINITIONS} ${KDE4_DEFINITIONS} ${KDEPIM_DEFINITIONS})
   include_directories (${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} ${KDE4_INCLUDES} ${KDEPIMLIBS_INCLUDE_DIRS} ${QT_QTDBUS_INCLUDE_DIR})
@@ -96,8 +96,8 @@ else(KDEPIM_ONLY_KLEO)
   find_package(Strigi)
   macro_log_feature(STRIGI_FOUND "Strigi" "Index metadata of files" "http://strigi.sourceforge.net" TRUE "" "")
 
-  find_package(QGpgme)
-  macro_log_feature(QGPGME_FOUND "QGpgME" "The QGpgME library" "http://www.kde.org" FALSE "" "QGpgME is required to build KMail, KOrganizer and Kleopatra")
+  find_package(KDE4_QGpgme)
+  macro_log_feature(KDE4_QGPGME_FOUND "KDE4_QGpgME" "The KDE4_QGpgME library" "http://www.kde.org" FALSE "" "KDE4_QGpgME is required to build KMail, KOrganizer and Kleopatra")
 
   set(SDO_MIN_VERSION 0.2)
   set(SOPRANO_MIN_VERSION 2.3.70)
@@ -188,12 +188,12 @@ set(libkdgantt1_SRCS
   add_subdirectory(messagecore)
   add_subdirectory(messagelist)
 
-  if(QGPGME_FOUND)
+  if(KDE4_QGPGME_FOUND)
     if (Boost_TOPOLOGICAL_SORT_DIR)
       macro_optional_add_subdirectory(kleopatra)
     endif(Boost_TOPOLOGICAL_SORT_DIR)
     macro_optional_add_subdirectory(wizards)
-    # The following components depend on QGpgME.
+    # The following components depend on KDE4_QGpgME.
     add_subdirectory(messageviewer)
     macro_optional_add_subdirectory(kmail)
 
@@ -214,7 +214,7 @@ set(libkdgantt1_SRCS
 #    include( SopranoAddOntology )
 #    add_subdirectory( ontologies )
 #    add_subdirectory( nepomuk_email_feeder )
-  endif(QGPGME_FOUND)
+  endif(KDE4_QGPGME_FOUND)
 
   if(KDEPIM_BUILD_EVERYTHING)
     macro_optional_add_subdirectory(knode)
@@ -254,13 +254,13 @@ endif (KDEPIM_ONLY_KLEO)
 macro_optional_add_subdirectory(doc)
 
 
-# We really want to encourage users to enable/install QGpgME from kdepimlibs
-if(NOT QGPGME_FOUND)
-  # Users must be aware that QGpgMe is really needed
-  message(STATUS "*** WARNING: QGpgME is not installed on your system ***")
+# We really want to encourage users to enable/install KDE4_QGpgME from kdepimlibs
+if(NOT KDE4_QGPGME_FOUND)
+  # Users must be aware that KDE4_QGpgMe is really needed
+  message(STATUS "*** WARNING: KDE4_QGpgME is not installed on your system ***")
   message(STATUS "*** It is required if you want to use KMail, KOrganizer or Kleopatra ***")
   message(STATUS "*** You are really encouraged to install it ***")
-endif(NOT QGPGME_FOUND)
+endif(NOT KDE4_QGPGME_FOUND)
 # All done, let's display what we found...
 macro_display_feature_log()
 

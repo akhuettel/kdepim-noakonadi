@@ -21,7 +21,7 @@ kde4_add_ui_files( _kgpgconf_SRCS mainwidget.ui )
 kde4_add_app_icon(_kgpgconf_SRCS "${KDE4_ICON_DIR}/oxygen/*/apps/preferences-desktop-cryptography.png")
 
 kde4_add_executable(kgpgconf ${_kgpgconf_SRCS} )
-target_link_libraries(kgpgconf ${QGPGME_LIBRARIES} ${KDE4_KDEUI_LIBS} )
+target_link_libraries(kgpgconf ${KDE4_QGPGME_LIBRARIES} ${KDE4_KDEUI_LIBS} )
 
 install(TARGETS kgpgconf ${INSTALL_TARGETS_DEFAULT_ARGS})
 

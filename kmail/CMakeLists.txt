@@ -371,7 +371,7 @@ target_link_libraries(kmailprivate
   ${KDE4_KPARTS_LIBRARY}
   ${KDE4_KRESOURCES_LIBRARY}
   kleo
-  ${QGPGME_LIBRARIES}
+  ${KDE4_QGPGME_LIBRARIES}
   mimelib
   ksieve
   kpgp
