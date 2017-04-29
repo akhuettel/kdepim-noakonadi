@@ -49,7 +49,7 @@
 #include <QPixmap>
 #include <QEvent>
 #include <QHelpEvent>
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 #include <vector>
 #include <map>

@@ -42,7 +42,7 @@
 #include <utils/headerview.h>
 #include <utils/stl_util.h>
 
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 #include <KLineEdit>
 #include <KLocale>

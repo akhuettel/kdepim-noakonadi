@@ -35,7 +35,7 @@
 
 #include "job.h"
 
-#include <gpgme++/global.h>
+#include <kde4_gpgme++/global.h>
 
 #include <boost/shared_ptr.hpp>
 

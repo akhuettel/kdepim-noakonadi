@@ -35,8 +35,8 @@
 
 #include "kleo/job.h"
 
-#include <gpgme++/signingresult.h>
-#include <gpgme++/encryptionresult.h>
+#include <kde4_gpgme++/signingresult.h>
+#include <kde4_gpgme++/encryptionresult.h>
 
 
 #ifndef KDEPIM_ONLY_KLEO

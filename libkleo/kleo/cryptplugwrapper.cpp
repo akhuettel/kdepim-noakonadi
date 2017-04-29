@@ -47,12 +47,12 @@
 #include <backends/qgpgme/qgpgmerefreshkeysjob.h>
 
 // qgpgme
-#include <qgpgme/dataprovider.h>
+#include <kde4_qgpgme/dataprovider.h>
 
 // gpgme++
-#include <gpgme++/data.h>
-#include <gpgme++/importresult.h>
-#include <gpgme++/keygenerationresult.h>
+#include <kde4_gpgme++/data.h>
+#include <kde4_gpgme++/importresult.h>
+#include <kde4_gpgme++/keygenerationresult.h>
 
 // kde
 #include <kdebug.h>

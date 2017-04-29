@@ -34,7 +34,7 @@
 #define __KLEO_QGPGMESECRETKEYEXPORTJOB_H__
 
 #include "kleo/exportjob.h"
-#include "gpgme++/context.h"
+#include "kde4_gpgme++/context.h"
 #include <QProcess>
 
 namespace Kleo {

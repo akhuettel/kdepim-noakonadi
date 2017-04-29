@@ -38,7 +38,7 @@
 
 #include <QStringList>
 
-#include <gpgme++/context.h>
+#include <kde4_gpgme++/context.h>
 
 namespace Kleo {
 

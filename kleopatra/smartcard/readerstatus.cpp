@@ -39,11 +39,11 @@
 #include <utils/kdsignalblocker.h>
 #include <utils/filesystemwatcher.h>
 
-#include <gpgme++/context.h>
-#include <gpgme++/assuanresult.h>
-#include <gpgme++/defaultassuantransaction.h>
-#include <gpgme++/key.h>
-#include <gpgme++/keylistresult.h>
+#include <kde4_gpgme++/context.h>
+#include <kde4_gpgme++/assuanresult.h>
+#include <kde4_gpgme++/defaultassuantransaction.h>
+#include <kde4_gpgme++/key.h>
+#include <kde4_gpgme++/keylistresult.h>
 
 #include <QFileSystemWatcher>
 #include <QStringList>

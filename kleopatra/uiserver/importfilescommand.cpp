@@ -38,7 +38,7 @@
 
 #include <utils/exception.h>
 
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 #include <gpg-error.h>
 

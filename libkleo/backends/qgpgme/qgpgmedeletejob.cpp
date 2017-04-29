@@ -32,8 +32,8 @@
 
 #include "qgpgmedeletejob.h"
 
-#include <gpgme++/context.h>
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/context.h>
+#include <kde4_gpgme++/key.h>
 
 #include <cassert>
 

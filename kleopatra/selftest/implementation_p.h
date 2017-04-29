@@ -35,7 +35,7 @@
 
 #include <selftest/selftest.h>
 
-#include <gpgme++/global.h>
+#include <kde4_gpgme++/global.h>
 
 #include <QString>
 

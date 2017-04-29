@@ -41,8 +41,8 @@
 #include <QString>
 #include <QIODevice>
 
-#include <gpgme++/context.h>
-#include <gpgme++/interfaces/progressprovider.h>
+#include <kde4_gpgme++/context.h>
+#include <kde4_gpgme++/interfaces/progressprovider.h>
 
 #include <boost/shared_ptr.hpp>
 #include <boost/weak_ptr.hpp>

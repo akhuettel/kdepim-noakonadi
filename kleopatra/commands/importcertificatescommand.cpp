@@ -45,8 +45,8 @@
 #include <kleo/importjob.h>
 #include <kleo/importfromkeyserverjob.h>
 
-#include <gpgme++/global.h>
-#include <gpgme++/importresult.h>
+#include <kde4_gpgme++/global.h>
+#include <kde4_gpgme++/importresult.h>
 
 #include <KLocale>
 #include <KMessageBox>

@@ -47,11 +47,11 @@
 #include <QDateTime>
 #include <QDebug>
 
-#include <qgpgme/eventloopinteractor.h>
+#include <kde4_qgpgme/eventloopinteractor.h>
 
-#include <gpgme++/context.h>
-#include <gpgme++/error.h>
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/context.h>
+#include <kde4_gpgme++/error.h>
+#include <kde4_gpgme++/key.h>
 
 #include <memory>
 #include <vector>

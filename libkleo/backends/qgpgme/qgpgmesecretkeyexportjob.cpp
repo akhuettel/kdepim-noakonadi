@@ -37,8 +37,8 @@
 
 #include <kdebug.h>
 
-#include <gpgme++/context.h>
-#include <gpgme++/data.h>
+#include <kde4_gpgme++/context.h>
+#include <kde4_gpgme++/data.h>
 
 #include <QStringList>
 

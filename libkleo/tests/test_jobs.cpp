@@ -34,9 +34,9 @@
 #include "libkleo/kleo/signjob.h"
 #include "libkleo/kleo/keylistjob.h"
 
-#include <gpgme++/key.h>
-#include <gpgme++/signingresult.h>
-#include <gpgme++/keylistresult.h>
+#include <kde4_gpgme++/key.h>
+#include <kde4_gpgme++/signingresult.h>
+#include <kde4_gpgme++/keylistresult.h>
 
 #include <kdebug.h>
 #include <assert.h>

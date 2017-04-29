@@ -36,7 +36,7 @@
 #include "job.h"
 
 
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 namespace Kleo {
 

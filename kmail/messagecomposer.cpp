@@ -45,11 +45,11 @@
 #include "util.h"
 #include "kmcomposereditor.h"
 
-#include <gpgme++/key.h>
-#include <gpgme++/keylistresult.h>
-#include <gpgme++/encryptionresult.h>
-#include <gpgme++/signingresult.h>
-#include <gpgme++/context.h>
+#include <kde4_gpgme++/key.h>
+#include <kde4_gpgme++/keylistresult.h>
+#include <kde4_gpgme++/encryptionresult.h>
+#include <kde4_gpgme++/signingresult.h>
+#include <kde4_gpgme++/context.h>
 
 #include <kpimidentities/identity.h>
 #include <kpimidentities/identitymanager.h>

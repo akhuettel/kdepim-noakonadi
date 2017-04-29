@@ -59,8 +59,8 @@
 #include <kleo/cryptobackendfactory.h>
 #include <kleo/cryptobackend.h>
 
-#include <gpgme++/global.h>
-#include <gpgme++/keygenerationresult.h>
+#include <kde4_gpgme++/global.h>
+#include <kde4_gpgme++/keygenerationresult.h>
 #include <gpgme.h>
 
 #include <KConfigGroup>

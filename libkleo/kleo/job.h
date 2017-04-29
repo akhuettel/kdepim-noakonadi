@@ -40,7 +40,7 @@
 
 #include "kleo/kleo_export.h"
 
-#include <gpgme++/error.h>
+#include <kde4_gpgme++/error.h>
 
 class QWidget;
 

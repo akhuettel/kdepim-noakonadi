@@ -37,9 +37,9 @@
 
 #include "threadedjobmixin.h"
 
-#include <gpgme++/signingresult.h>
-#include <gpgme++/encryptionresult.h>
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/signingresult.h>
+#include <kde4_gpgme++/encryptionresult.h>
+#include <kde4_gpgme++/key.h>
 
 #include <utility>
 

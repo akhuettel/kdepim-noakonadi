@@ -37,7 +37,7 @@
 
 #include <utils/types.h>
 
-#include <gpgme++/verificationresult.h>
+#include <kde4_gpgme++/verificationresult.h>
 
 #include <boost/shared_ptr.hpp>
 

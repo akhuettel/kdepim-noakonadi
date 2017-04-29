@@ -56,8 +56,8 @@
 #include <utils/getpid.h>
 #include <utils/stl_util.h>
 
-#include <gpgme++/data.h>
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/data.h>
+#include <kde4_gpgme++/key.h>
 
 #include <kmime/kmime_header_parsing.h>
 

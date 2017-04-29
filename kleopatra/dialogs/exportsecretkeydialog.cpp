@@ -38,7 +38,7 @@
 
 #include <utils/formatting.h>
 
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 #include <KDebug>
 #include <KMessageBox>

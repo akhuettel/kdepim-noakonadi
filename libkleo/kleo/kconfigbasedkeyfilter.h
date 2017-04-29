@@ -40,7 +40,7 @@
 #include <QColor>
 #include <QIcon>
 
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 class KConfigGroup;
 

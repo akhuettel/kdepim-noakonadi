@@ -46,7 +46,7 @@
 #include <utils/stl_util.h>
 #include <utils/kleo_assert.h>
 
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 #include <KConfig>
 #include <KGlobal>

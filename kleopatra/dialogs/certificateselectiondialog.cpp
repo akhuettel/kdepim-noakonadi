@@ -44,7 +44,7 @@
 #include <commands/lookupcertificatescommand.h>
 #include <commands/newcertificatecommand.h>
 
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 #include <KLocale>
 #include <KConfigGroup>

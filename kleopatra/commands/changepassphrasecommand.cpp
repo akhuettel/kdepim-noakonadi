@@ -38,7 +38,7 @@
 
 #include <utils/gnupg-helper.h>
 
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 #include <KLocale>
 #include <KMessageBox>

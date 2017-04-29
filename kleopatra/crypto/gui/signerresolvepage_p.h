@@ -33,7 +33,7 @@
 #ifndef __KLEOPATRA_CRYPTO_GUI_SIGNERRESOLVEPAGE_P_H__
 #define __KLEOPATRA_CRYPTO_GUI_SIGNERRESOLVEPAGE_P_H__
 
-#include <gpgme++/global.h>
+#include <kde4_gpgme++/global.h>
 
 class QButtonGroup;
 class QCheckBox;

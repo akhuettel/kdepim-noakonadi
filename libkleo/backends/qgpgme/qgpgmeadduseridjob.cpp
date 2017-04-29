@@ -32,12 +32,12 @@
 
 #include "qgpgmeadduseridjob.h"
 
-#include <qgpgme/dataprovider.h>
+#include <kde4_qgpgme/dataprovider.h>
 
-#include <gpgme++/context.h>
-#include <gpgme++/data.h>
-#include <gpgme++/gpgadduserideditinteractor.h>
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/context.h>
+#include <kde4_gpgme++/data.h>
+#include <kde4_gpgme++/gpgadduserideditinteractor.h>
+#include <kde4_gpgme++/key.h>
 
 #include <cassert>
 #include <memory>

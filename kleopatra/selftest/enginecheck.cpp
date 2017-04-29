@@ -36,9 +36,9 @@
 
 #include "implementation_p.h"
 
-#include <gpgme++/global.h>
-#include <gpgme++/engineinfo.h>
-#include <gpgme++/error.h>
+#include <kde4_gpgme++/global.h>
+#include <kde4_gpgme++/engineinfo.h>
+#include <kde4_gpgme++/error.h>
 
 #include <gpg-error.h>
 

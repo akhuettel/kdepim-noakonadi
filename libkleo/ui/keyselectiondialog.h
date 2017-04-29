@@ -40,7 +40,7 @@
 #include "kleo/kleo_export.h"
 #include "kleo/cryptobackend.h"
 
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 #include <kdialog.h>
 

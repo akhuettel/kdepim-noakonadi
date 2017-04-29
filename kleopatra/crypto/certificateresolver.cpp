@@ -36,7 +36,7 @@
 
 #include <models/keycache.h>
 
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 #include <KConfig>
 #include <KConfigGroup>

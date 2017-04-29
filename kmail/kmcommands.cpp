@@ -133,7 +133,7 @@ using namespace KMime;
   #include <nepomuk/tag.h>
 #endif
 
-#include <gpgme++/error.h>
+#include <kde4_gpgme++/error.h>
 
 #include <QClipboard>
 #include <QDBusMessage>

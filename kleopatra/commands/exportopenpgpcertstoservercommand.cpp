@@ -41,7 +41,7 @@
 #include <kleo/cryptobackendfactory.h>
 #include <kleo/cryptoconfig.h>
 
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 #include <KLocale>
 #include <KMessageBox>

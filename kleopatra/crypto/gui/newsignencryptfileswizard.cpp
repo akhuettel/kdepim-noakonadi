@@ -72,7 +72,7 @@
 #include <QVariant>
 #include <QPointer>
 
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 #include <boost/shared_ptr.hpp>
 #include <boost/bind.hpp>

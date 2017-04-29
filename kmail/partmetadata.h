@@ -17,8 +17,8 @@
 #ifndef _KMAIL_PARTMETADATA_H_
 #define _KMAIL_PARTMETADATA_H_
 
-#include <gpgme++/verificationresult.h>
-#include <gpgme++/context.h>
+#include <kde4_gpgme++/verificationresult.h>
+#include <kde4_gpgme++/context.h>
 
 #include <libkpgp/kpgp.h>
 #include <QString>

@@ -26,9 +26,9 @@
 
 #include "libkleo/kleo/oidmap.h"
 
-#include <gpgme++/context.h>
-#include <gpgme++/data.h>
-#include <gpgme++/importresult.h>
+#include <kde4_gpgme++/context.h>
+#include <kde4_gpgme++/data.h>
+#include <kde4_gpgme++/importresult.h>
 
 /*! \file gpgmeplug.c
     \brief GPGME implementation of CRYPTPLUG following the

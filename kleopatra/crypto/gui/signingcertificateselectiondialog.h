@@ -34,7 +34,7 @@
 
 #include <KDialog>
 
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 #include <utils/pimpl_ptr.h>
 

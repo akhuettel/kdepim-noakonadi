@@ -33,7 +33,7 @@
 #ifndef __KLEOPATRA_UTILS_FORMATTING_H__
 #define __KLEOPATRA_UTILS_FORMATTING_H__
 
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 class QString;
 class QStringList;

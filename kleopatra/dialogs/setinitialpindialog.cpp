@@ -41,7 +41,7 @@
 
 #include <QTextDocument> // for Qt::escape
 
-#include <gpgme++/error.h>
+#include <kde4_gpgme++/error.h>
 
 #include <boost/static_assert.hpp>
 

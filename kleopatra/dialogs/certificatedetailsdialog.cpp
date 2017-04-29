@@ -55,8 +55,8 @@
 #include <kleo/keylistjob.h>
 #include <kleo/dn.h>
 
-#include <gpgme++/key.h>
-#include <gpgme++/keylistresult.h>
+#include <kde4_gpgme++/key.h>
+#include <kde4_gpgme++/keylistresult.h>
 
 #include <KDebug>
 #include <KMessageBox>

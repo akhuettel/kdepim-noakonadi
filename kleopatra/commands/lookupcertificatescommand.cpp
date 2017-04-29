@@ -49,9 +49,9 @@
 #include <kleo/cryptobackend.h>
 #include <kleo/cryptoconfig.h>
 
-#include <gpgme++/key.h>
-#include <gpgme++/keylistresult.h>
-#include <gpgme++/importresult.h>
+#include <kde4_gpgme++/key.h>
+#include <kde4_gpgme++/keylistresult.h>
+#include <kde4_gpgme++/importresult.h>
 
 #include <KLocale>
 #include <KMessageBox>

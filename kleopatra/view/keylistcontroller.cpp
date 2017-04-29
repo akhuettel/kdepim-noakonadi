@@ -47,7 +47,7 @@
 
 #include "tooltippreferences.h"
 
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 #include <QAbstractItemView>
 #include <QTreeView>

@@ -39,7 +39,7 @@
 
 #include <kdebug.h>
 
-#include <gpgme++/context.h>
+#include <kde4_gpgme++/context.h>
 
 #include <QByteArray>
 #include <QStringList>

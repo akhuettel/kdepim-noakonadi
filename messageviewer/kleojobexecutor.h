@@ -19,9 +19,9 @@
 #ifndef _MESSAGEVIEWER_KLEOJOBEXECUTOR_H
 #define _MESSAGEVIEWER_KLEOJOBEXECUTOR_H
 
-#include <gpgme++/decryptionresult.h>
-#include <gpgme++/importresult.h>
-#include <gpgme++/verificationresult.h>
+#include <kde4_gpgme++/decryptionresult.h>
+#include <kde4_gpgme++/importresult.h>
+#include <kde4_gpgme++/verificationresult.h>
 
 #include <QtCore/QObject>
 

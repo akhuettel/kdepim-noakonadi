@@ -30,7 +30,7 @@
     your version.
 */
 
-#include <gpgme++/global.h>
+#include <kde4_gpgme++/global.h>
 
 #ifndef __KLEOPATRA_UISERVER_CLASSIFY_H__
 #define __KLEOPATRA_UISERVER_CLASSIFY_H__

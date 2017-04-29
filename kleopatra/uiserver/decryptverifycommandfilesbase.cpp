@@ -48,10 +48,10 @@
 #include <utils/exception.h>
 #include <utils/stl_util.h>
 
-#include <gpgme++/error.h>
-#include <gpgme++/key.h>
-#include <gpgme++/verificationresult.h>
-#include <gpgme++/decryptionresult.h>
+#include <kde4_gpgme++/error.h>
+#include <kde4_gpgme++/key.h>
+#include <kde4_gpgme++/verificationresult.h>
+#include <kde4_gpgme++/decryptionresult.h>
 
 #include <KLocalizedString>
 

@@ -44,7 +44,7 @@
 #include <kleo/keyfilter.h>
 #include <kleo/keyfiltermanager.h>
 
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 #include <KLocale>
 #include <KTabWidget>

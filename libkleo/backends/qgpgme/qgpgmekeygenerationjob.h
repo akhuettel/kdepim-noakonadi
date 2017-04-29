@@ -37,7 +37,7 @@
 
 #include "threadedjobmixin.h"
 
-#include <gpgme++/keygenerationresult.h>
+#include <kde4_gpgme++/keygenerationresult.h>
 
 namespace Kleo {
 

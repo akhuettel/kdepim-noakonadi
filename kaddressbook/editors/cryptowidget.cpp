@@ -37,8 +37,8 @@
 #include <kiconloader.h>
 #include <klocale.h>
 
-#include "gpgme++/data.h"
-#include "gpgme++/key.h"
+#include "kde4_gpgme++/data.h"
+#include "kde4_gpgme++/key.h"
 
 #include "libkleo/ui/keyrequester.h"
 #include "libkleo/kleo/cryptplugfactory.h"

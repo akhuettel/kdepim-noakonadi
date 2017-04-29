@@ -32,9 +32,9 @@
 
 #include "threadedjobmixin.h"
 
-#include <qgpgme/dataprovider.h>
+#include <kde4_qgpgme/dataprovider.h>
 
-#include <gpgme++/data.h>
+#include <kde4_gpgme++/data.h>
 
 #include <QString>
 #include <QStringList>

@@ -71,10 +71,10 @@
 #include <kleo/importjob.h>
 #include <kleo/dn.h>
 
-#include <gpgme++/importresult.h>
-#include <gpgme++/decryptionresult.h>
-#include <gpgme++/key.h>
-#include <gpgme++/keylistresult.h>
+#include <kde4_gpgme++/importresult.h>
+#include <kde4_gpgme++/decryptionresult.h>
+#include <kde4_gpgme++/key.h>
+#include <kde4_gpgme++/keylistresult.h>
 #include <gpgme.h>
 
 #include <libkpgp/kpgpblock.h>

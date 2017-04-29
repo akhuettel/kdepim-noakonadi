@@ -35,7 +35,7 @@
 #define _MESSAGEVIEWER_OBJECTTREEPARSER_H_
 
 #include <kleo/cryptobackend.h>
-#include <gpgme++/verificationresult.h>
+#include <kde4_gpgme++/verificationresult.h>
 
 #include <QList>
 

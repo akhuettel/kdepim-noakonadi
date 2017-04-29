@@ -32,11 +32,11 @@
 
 #include "qgpgmedecryptjob.h"
 
-#include <qgpgme/dataprovider.h>
+#include <kde4_qgpgme/dataprovider.h>
 
-#include <gpgme++/context.h>
-#include <gpgme++/decryptionresult.h>
-#include <gpgme++/data.h>
+#include <kde4_gpgme++/context.h>
+#include <kde4_gpgme++/decryptionresult.h>
+#include <kde4_gpgme++/data.h>
 
 #include <QBuffer>
 

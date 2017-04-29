@@ -43,8 +43,8 @@
 #include <kleo/cryptobackend.h>
 #include <kleo/encryptjob.h>
 
-#include <gpgme++/encryptionresult.h>
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/encryptionresult.h>
+#include <kde4_gpgme++/key.h>
 
 #include <KLocale>
 

@@ -39,7 +39,7 @@
 
 #include <KDebug>
 
-#include <gpgme++/keylistresult.h>
+#include <kde4_gpgme++/keylistresult.h>
 
 #include <boost/bind.hpp>
 

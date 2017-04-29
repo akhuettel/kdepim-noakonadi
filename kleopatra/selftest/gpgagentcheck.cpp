@@ -38,9 +38,9 @@
 
 #include <utils/getpid.h>
 
-#include <gpgme++/context.h>
-#include <gpgme++/assuanresult.h>
-#include <gpgme++/gpgagentgetinfoassuantransaction.h>
+#include <kde4_gpgme++/context.h>
+#include <kde4_gpgme++/assuanresult.h>
+#include <kde4_gpgme++/gpgagentgetinfoassuantransaction.h>
 
 #include <QTextDocument> // for Qt::escape
 #include <QCoreApplication>

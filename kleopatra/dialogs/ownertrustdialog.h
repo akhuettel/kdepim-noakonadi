@@ -37,7 +37,7 @@
 
 #include <utils/pimpl_ptr.h>
 
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 namespace Kleo {
 namespace Dialogs {

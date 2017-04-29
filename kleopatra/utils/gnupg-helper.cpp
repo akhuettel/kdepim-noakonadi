@@ -34,7 +34,7 @@
 
 #include "gnupg-helper.h"
 
-#include <gpgme++/engineinfo.h>
+#include <kde4_gpgme++/engineinfo.h>
 
 #include <KStandardDirs>
 

@@ -44,12 +44,12 @@
 # include <models/modeltest.h>
 #endif
 
-#include <qgpgme/eventloopinteractor.h>
+#include <kde4_qgpgme/eventloopinteractor.h>
 
-#include <gpgme++/context.h>
-#include <gpgme++/error.h>
-#include <gpgme++/key.h>
-#include <gpgme++/keylistresult.h>
+#include <kde4_gpgme++/context.h>
+#include <kde4_gpgme++/error.h>
+#include <kde4_gpgme++/key.h>
+#include <kde4_gpgme++/keylistresult.h>
 
 #include <gpg-error.h>
 

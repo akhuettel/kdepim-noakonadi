@@ -36,7 +36,7 @@
 #include "libkleo/kleo/cryptobackendfactory.h"
 #include "libkleo/ui/progressdialog.h"
 
-#include <gpgme++/keygenerationresult.h>
+#include <kde4_gpgme++/keygenerationresult.h>
 
 #include <kapplication.h>
 #include <kaboutdata.h>

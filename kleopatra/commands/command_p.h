@@ -44,7 +44,7 @@
 #include <QList>
 #include <QModelIndex>
 
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/key.h>
 
 #include <algorithm>
 #include <iterator>

@@ -34,8 +34,8 @@
 #include "configuration.h"
 #include "exception.h"
 
-#include <gpgme++/global.h>
-#include <gpgme++/engineinfo.h>
+#include <kde4_gpgme++/global.h>
+#include <kde4_gpgme++/engineinfo.h>
 
 #include <KLocale>
 #include <KStandardDirs>

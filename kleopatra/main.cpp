@@ -77,8 +77,8 @@ namespace Kleo {
 #include <QThreadPool>
 #include <QDebug>
 
-#include <gpgme++/global.h>
-#include <gpgme++/error.h>
+#include <kde4_gpgme++/global.h>
+#include <kde4_gpgme++/error.h>
 
 #include <boost/shared_ptr.hpp>
 

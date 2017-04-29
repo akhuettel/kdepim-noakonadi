@@ -32,9 +32,9 @@
 
 #include "qgpgmekeylistjob.h"
 
-#include <gpgme++/key.h>
-#include <gpgme++/context.h>
-#include <gpgme++/keylistresult.h>
+#include <kde4_gpgme++/key.h>
+#include <kde4_gpgme++/context.h>
+#include <kde4_gpgme++/keylistresult.h>
 #include <gpg-error.h>
 
 #include <kmessagebox.h>

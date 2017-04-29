@@ -36,8 +36,8 @@
 #include <utils/pimpl_ptr.h>
 #include <utils/types.h>
 
-#include <gpgme++/global.h>
-#include <gpgme++/error.h>
+#include <kde4_gpgme++/global.h>
+#include <kde4_gpgme++/error.h>
 
 #ifdef HAVE_ASSUAN2
 #include <gpg-error.h>

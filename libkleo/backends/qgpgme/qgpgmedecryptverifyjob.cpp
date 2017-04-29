@@ -32,12 +32,12 @@
 
 #include "qgpgmedecryptverifyjob.h"
 
-#include <qgpgme/dataprovider.h>
+#include <kde4_qgpgme/dataprovider.h>
 
-#include <gpgme++/context.h>
-#include <gpgme++/decryptionresult.h>
-#include <gpgme++/verificationresult.h>
-#include <gpgme++/data.h>
+#include <kde4_gpgme++/context.h>
+#include <kde4_gpgme++/decryptionresult.h>
+#include <kde4_gpgme++/verificationresult.h>
+#include <kde4_gpgme++/data.h>
 
 #include <KDebug>
 

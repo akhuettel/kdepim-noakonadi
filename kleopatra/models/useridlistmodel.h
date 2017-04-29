@@ -38,7 +38,7 @@
 
 #include <utils/pimpl_ptr.h>
 
-#include <gpgme++/key.h> // since Signature is nested in UserID...
+#include <kde4_gpgme++/key.h> // since Signature is nested in UserID...
 
 namespace Kleo {
 

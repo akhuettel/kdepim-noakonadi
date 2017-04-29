@@ -36,7 +36,7 @@
 #include "kmmsgbase.h"
 
 #include <kleo/cryptobackend.h>
-#include <gpgme++/verificationresult.h>
+#include <kde4_gpgme++/verificationresult.h>
 
 #include <cassert>
 

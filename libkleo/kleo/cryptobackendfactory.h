@@ -36,7 +36,7 @@
 #include "kleo/kleo_export.h"
 #include "kleo/cryptobackend.h"
 
-#include <gpgme++/global.h>
+#include <kde4_gpgme++/global.h>
 
 #include <QtCore/QObject>
 

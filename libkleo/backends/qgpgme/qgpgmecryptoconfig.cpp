@@ -42,8 +42,8 @@
 #include <kshell.h>
 #include <KStandardDirs>
 
-#include <gpgme++/engineinfo.h>
-#include <gpgme++/global.h>
+#include <kde4_gpgme++/engineinfo.h>
+#include <kde4_gpgme++/global.h>
 
 #include <cassert>
 #include <ktemporaryfile.h>

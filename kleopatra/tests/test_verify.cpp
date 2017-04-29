@@ -36,9 +36,9 @@
 #include <kleo/verifydetachedjob.h>
 #include <kleo/keylistjob.h>
 
-#include <gpgme++/error.h>
-#include <gpgme++/verificationresult.h>
-#include <gpgme++/key.h>
+#include <kde4_gpgme++/error.h>
+#include <kde4_gpgme++/verificationresult.h>
+#include <kde4_gpgme++/key.h>
 
 #include <QtCore/QObject>
 

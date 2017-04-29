@@ -37,8 +37,8 @@
 
 #include "threadedjobmixin.h"
 
-#include <gpgme++/decryptionresult.h>
-#include <gpgme++/verificationresult.h>
+#include <kde4_gpgme++/decryptionresult.h>
+#include <kde4_gpgme++/verificationresult.h>
 
 namespace Kleo {
 

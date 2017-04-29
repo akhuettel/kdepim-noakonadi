@@ -36,7 +36,7 @@
 #include "command_p.h"
 #include "importcertificatescommand.h"
 
-#include <gpgme++/global.h>
+#include <kde4_gpgme++/global.h>
 
 #include <vector>
 

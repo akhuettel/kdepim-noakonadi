@@ -35,7 +35,7 @@
 
 #include <commands/gnupgprocesscommand.h>
 
-#include <gpgme++/global.h>
+#include <kde4_gpgme++/global.h>
 
 namespace Kleo {
 namespace Commands {

@@ -40,9 +40,9 @@
 #include <QStringList>
 #include <q3tl.h>
 
-#include <gpgme++/key.h>
-#include <gpgme++/context.h>
-#include <gpgme++/data.h>
+#include <kde4_gpgme++/key.h>
+#include <kde4_gpgme++/context.h>
+#include <kde4_gpgme++/data.h>
 
 #include <gpg-error.h>
 

@@ -34,7 +34,7 @@
 #define __KLEOPATRA_UTILS_EXCEPTION_H__
 
 #include <gpg-error.h>
-#include <gpgme++/exception.h>
+#include <kde4_gpgme++/exception.h>
 
 #include <QString>
 
