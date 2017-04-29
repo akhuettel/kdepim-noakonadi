@@ -32,10 +32,11 @@ endif(BUILD_kleopatra)
 
 if(BUILD_kmail)
   add_subdirectory(kmail)
-  if(BUILD_korganizer)
-    add_subdirectory(korganizer)
-  endif(BUILD_korganizer)
 endif(BUILD_kmail)
+
+if(BUILD_korganizer)
+  add_subdirectory(korganizer)
+endif(BUILD_korganizer)
 
 if(BUILD_knode)
   add_subdirectory(knode)
